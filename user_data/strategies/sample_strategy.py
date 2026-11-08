@@ -279,7 +279,7 @@ class SampleStrategy(IStrategy):
         # dataframe['ema3'] = ta.EMA(dataframe, timeperiod=3)
         # dataframe['ema5'] = ta.EMA(dataframe, timeperiod=5)
         # dataframe['ema10'] = ta.EMA(dataframe, timeperiod=10)
-        # dataframe['ema21'] = ta.EMA(dataframe, timeperiod=21)
+        # dataframe["ema21"] = ta.EMA(dataframe, timeperiod=21)
         # dataframe['ema50'] = ta.EMA(dataframe, timeperiod=50)
         # dataframe['ema100'] = ta.EMA(dataframe, timeperiod=100)
 
