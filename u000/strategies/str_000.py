@@ -40,7 +40,7 @@ from technical import qtpylib
 
 
 # This class is a sample. Feel free to customize it.
-class Gc7Strategy001(IStrategy):
+class Str000(IStrategy):
     """
     This is a sample strategy to inspire you.
     More information in https://www.freqtrade.io/en/stable/strategy-customization/
