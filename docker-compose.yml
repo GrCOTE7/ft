@@ -21,7 +21,7 @@ services:
     #   context: .
     #   dockerfile: "./docker/Dockerfile.custom"
     restart: unless-stopped
-    container_name: ft0
+    container_name: ftd000
     volumes:
       - "./u000:/freqtrade/user_data"
     # Expose api on port 8080 (localhost only)
@@ -30,7 +30,6 @@ services:
     ports:
       - "127.0.0.1:8080:8080"
     # Default command used when running `docker compose up`
-    # --strategy SampleStrategy
     command: >
       trade
       --logfile /freqtrade/user_data/logs/freqtrade.log
@@ -44,7 +43,7 @@ services:
   freqtrade2:                           # nom du service (libre)
     image: freqtradeorg/freqtrade:stable
     restart: unless-stopped
-    container_name: ft1         # nom unique pour le conteneur 2
+    container_name: ftd001         # nom unique pour le conteneur 2
     volumes:
       - "./u001:/freqtrade/user_data"   # volume différent
     environment:
