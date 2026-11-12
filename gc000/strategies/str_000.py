@@ -69,14 +69,14 @@ class Str000(IStrategy):
     # This attribute will be overridden if the config file contains "minimal_roi".
     minimal_roi = {
         # "120": 0.0,  # exit after 120 minutes at break even
-        # "60": 0.01,
-        # "30": 0.02,
-        "0": 0.3,
+        "60": 0.01,
+        "30": 0.02,
+        "0": 0.04,
     }
 
     # Optimal stoploss designed for the strategy.
     # This attribute will be overridden if the config file contains "stoploss".
-    stoploss = -0.20
+    stoploss = -0.10
 
     # Trailing stoploss
     trailing_stop = False
@@ -456,7 +456,6 @@ class Str000(IStrategy):
 # Non utilisé dans cette STR mais gardée pour référence et peut-être appliquer + tard
 # → Custom dynamique
 # use_custom_stoploss = True
-
 
 def custom_stoploss(
     self,

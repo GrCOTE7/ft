@@ -78343,3 +78343,212 @@ sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) disk I/O error
 2026-11-12 14:45:48,668 - uvicorn.error - INFO - Application shutdown complete.
 2026-11-12 14:45:48,670 - uvicorn.error - INFO - Finished server process [1]
 2026-11-12 14:45:48,926 - freqtrade - INFO - SIGINT received, aborting ...
+2026-11-12 14:53:26,146 - freqtrade.loggers - INFO - Enabling colorized output.
+2026-11-12 14:53:26,147 - freqtrade.loggers - INFO - Logfile configured
+2026-11-12 14:53:26,148 - freqtrade.loggers - INFO - Verbosity set to 0
+2026-11-12 14:53:26,150 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2026-11-12 14:53:26,151 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2026-11-12 14:53:26,152 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2026-11-12 14:53:26,153 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2026-11-12 14:53:26,154 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 20 ...
+2026-11-12 14:53:27,127 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2026-11-12 14:53:27,132 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/kraken ...
+2026-11-12 14:53:27,165 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2026-11-12 14:53:27,173 - freqtrade.exchange.check_exchange - INFO - Exchange "kraken" is officially supported by the Freqtrade development team.
+2026-11-12 14:53:27,176 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2026-11-12 14:53:27,178 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2026-11-12 14:53:27,180 - freqtrade.exchange.exchange - INFO - Using CCXT 4.5.90
+2026-11-12 14:53:27,186 - freqtrade.exchange.exchange - INFO - Using Exchange "Kraken"
+2026-11-12 14:53:28,821 - freqtrade.exchange.exchange - INFO - Time offset to Kraken is 730ms.
+2026-11-12 14:53:28,822 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange class 'Kraken' ...
+2026-11-12 14:53:29,283 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy Str000 from '/freqtrade/user_data/strategies/str_000.py'...
+2026-11-12 14:53:29,286 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2026-11-12 14:53:29,287 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value from the configuration: USD.
+2026-11-12 14:53:29,288 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value from the configuration: 100.
+2026-11-12 14:53:29,290 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value from the configuration: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}.
+2026-11-12 14:53:29,291 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value from the configuration: 20.
+2026-11-12 14:53:29,292 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'60': 0.01, '30': 0.02, '0': 0.04}
+2026-11-12 14:53:29,293 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 5m
+2026-11-12 14:53:29,294 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.1
+2026-11-12 14:53:29,296 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2026-11-12 14:53:29,297 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2026-11-12 14:53:29,298 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2026-11-12 14:53:29,299 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2026-11-12 14:53:29,300 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2026-11-12 14:53:29,301 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'market', 'stoploss_on_exchange': False}
+2026-11-12 14:53:29,303 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2026-11-12 14:53:29,304 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USD
+2026-11-12 14:53:29,305 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 100
+2026-11-12 14:53:29,307 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 200
+2026-11-12 14:53:29,308 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}
+2026-11-12 14:53:29,310 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2026-11-12 14:53:29,311 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2026-11-12 14:53:29,312 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2026-11-12 14:53:29,313 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2026-11-12 14:53:29,315 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2026-11-12 14:53:29,316 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2026-11-12 14:53:29,317 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2026-11-12 14:53:29,318 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2026-11-12 14:53:29,320 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 20
+2026-11-12 14:53:29,321 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2026-11-12 14:53:29,775 - freqtrade.wallets - INFO - Wallets synced.
+2026-11-12 14:53:30,181 - freqtrade.rpc.rpc_manager - INFO - Enabling rpc.api_server
+2026-11-12 14:53:30,792 - freqtrade.rpc.api_server.webserver - INFO - Starting HTTP Server at 0.0.0.0:8080
+2026-11-12 14:53:30,793 - freqtrade.rpc.api_server.webserver - INFO - Starting Local Rest Server.
+2026-11-12 14:53:31,546 - uvicorn.error - INFO - Started server process [1]
+2026-11-12 14:53:31,547 - uvicorn.error - INFO - Waiting for application startup.
+2026-11-12 14:53:31,567 - uvicorn.error - INFO - Application startup complete.
+2026-11-12 14:53:31,569 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+2026-11-12 14:53:31,618 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist VolumePairList from '/freqtrade/freqtrade/plugins/pairlist/VolumePairList.py'...
+2026-11-12 14:53:31,620 - freqtrade.freqtradebot - INFO - Starting initial pairlist refresh
+2026-11-12 14:53:31,823 - VolumePairList - INFO - Pair AUD/USD in your blacklist. Removing it from whitelist...
+2026-11-12 14:53:31,824 - VolumePairList - INFO - Pair EURC/USD in your blacklist. Removing it from whitelist...
+2026-11-12 14:53:31,826 - VolumePairList - INFO - Pair EUROP/USD in your blacklist. Removing it from whitelist...
+2026-11-12 14:53:31,827 - VolumePairList - INFO - Pair POL/USD in your blacklist. Removing it from whitelist...
+2026-11-12 14:53:31,829 - VolumePairList - INFO - Pair USDC/USD in your blacklist. Removing it from whitelist...
+2026-11-12 14:53:31,830 - VolumePairList - INFO - Pair USDG/USD in your blacklist. Removing it from whitelist...
+2026-11-12 14:53:31,831 - VolumePairList - INFO - Pair USDT/USD in your blacklist. Removing it from whitelist...
+2026-11-12 14:53:31,832 - VolumePairList - INFO - Pair EUR/USD in your blacklist. Removing it from whitelist...
+2026-11-12 14:53:31,833 - VolumePairList - INFO - Pair GBP/USD in your blacklist. Removing it from whitelist...
+2026-11-12 14:53:31,856 - freqtrade.plugins.pairlistmanager - INFO - Whitelist with 100 pairs: ['BTC/USD', 'ETH/USD', 'ZEC/USD', 'XRP/USD', 'SOL/USD', 'HYPE/USD', 'NEAR/USD', 'TAO/USD', 'ADA/USD', 'XMR/USD', 'PEPE/USD', 'SUI/USD', 'LINK/USD', 'DOGE/USD', 'AVAX/USD', 'UNI/USD', 'QNT/USD', 'XLM/USD', 'LTC/USD', 'NIGHT/USD', 'INJ/USD', 'AAVE/USD', 'ENA/USD', 'TON/USD', 'PUMP/USD', 'TRX/USD', 'ARB/USD', 'PAXG/USD', 'XDC/USD', 'CRV/USD', 'HBAR/USD', 'WLD/USD', 'BNB/USD', 'ZRO/USD', 'AERO/USD', 'ONDO/USD', 'DOT/USD', 'USELESS/USD', 'VVV/USD', 'TIA/USD', 'CC/USD', 'ICP/USD', 'BCH/USD', 'XAUT/USD', 'LIGHTER/USD', 'FLR/USD', 'FET/USD', 'PENGU/USD', 'AKE/USD', 'ZCHF/USD', 'TRUMP/USD', 'RENDER/USD', 'JUP/USD', 'XPL/USD', 'ALGO/USD', 'KAS/USD', 'BAT/USD', 'MON/USD', 'FARTCOIN/USD', 'DASH/USD', 'XCN/USD', 'SHIB/USD', 'SPX/USD', 'GRASS/USD', 'ASTER/USD', 'RAY/USD', 'PYTH/USD', 'Q/USD', 'ADI/USD', 'ATOM/USD', 'SYRUP/USD', 'STX/USD', 'MORPHO/USD', 'APT/USD', 'AKT/USD', 'MEGA/USD', 'XTZ/USD', 'FIL/USD', 'UAI/USD', 'NPC/USD', 'STRK/USD', 'DAI/USD', 'OP/USD', 'RUNE/USD', 'CVX/USD', 'ICNT/USD', 'USDE/USD', 'CAP/USD', 'PENDLE/USD', 'DRV/USD', 'APE/USD', 'ORCA/USD', 'INIT/USD', 'VIRTUAL/USD', 'BONK/USD', 'POPCAT/USD', 'BRL1/USD', 'SEI/USD', 'W/USD', 'SKY/USD']
+2026-11-12 14:53:31,858 - freqtrade.freqtradebot - INFO - Initial Pairlist refresh took 0.24s
+2026-11-12 14:53:31,860 - freqtrade.strategy.hyper - INFO - No params for buy found, using default values.
+2026-11-12 14:53:31,861 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): buy_rsi = 30
+2026-11-12 14:53:31,862 - freqtrade.strategy.hyper - INFO - No params for exit found, using default values.
+2026-11-12 14:53:31,863 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): exit_short_rsi = 30
+2026-11-12 14:53:31,864 - freqtrade.strategy.hyper - INFO - No params for sell found, using default values.
+2026-11-12 14:53:31,865 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): sell_rsi = 70
+2026-11-12 14:53:31,867 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): short_rsi = 70
+2026-11-12 14:53:31,868 - freqtrade.plugins.protectionmanager - INFO - No protection Handlers defined.
+2026-11-12 14:53:31,869 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': status, 'status': 'running'}
+2026-11-12 14:53:31,870 - freqtrade.worker - INFO - Changing state to: RUNNING
+2026-11-12 14:53:31,900 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': warning, 'status': 'Dry run is enabled. All trades are simulated.'}
+2026-11-12 14:53:31,902 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': startup, 'status': "*Exchange:* `kraken`\n*Stake per trade:* `100 USD`\n*Minimum ROI:* `{'60': 0.01, '30': 0.02, '0': 0.04}`\n*Stoploss:* `-0.1`\n*Position adjustment:* `Off`\n*Timeframe:* `5m`\n*Strategy:* `Str000`"}
+2026-11-12 14:53:31,903 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': startup, 'status': "Searching for USD pairs to buy and sell based on [{'VolumePairList': 'VolumePairList - top 100 volume pairs.'}]"}
+2026-11-12 14:53:35,667 - uvicorn.error - INFO - 172.20.0.1:45878 - "WebSocket /api/v1/message/ws?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGl0eSI6eyJ1IjoiZ2M3In0sImV4cCI6MTc5NDQ5NjExNSwiaWF0IjoxNzk0NDk1MjE1LCJ0eXBlIjoiYWNjZXNzIn0.LqAQsze9vqybBzh8Mc-rFD9gBjwhFcy9h8upJ6aXn1Y" [accepted]
+2026-11-12 14:53:35,670 - uvicorn.error - INFO - connection open
+2026-11-12 14:53:35,674 - freqtrade.rpc.api_server.ws.channel - INFO - Connected to channel - WebSocketChannel(96db0ae2, ('172.20.0.1', 45878))
+2026-11-12 14:53:37,539 - freqtrade.rpc.api_server.ws.channel - INFO - Disconnected from channel - WebSocketChannel(96db0ae2, ('172.20.0.1', 45878))
+2026-11-12 14:53:38,420 - uvicorn.error - INFO - 172.20.0.1:45890 - "WebSocket /api/v1/message/ws?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGl0eSI6eyJ1IjoiZ2M3In0sImV4cCI6MTc5NDQ5NjExNSwiaWF0IjoxNzk0NDk1MjE1LCJ0eXBlIjoiYWNjZXNzIn0.LqAQsze9vqybBzh8Mc-rFD9gBjwhFcy9h8upJ6aXn1Y" [accepted]
+2026-11-12 14:53:38,423 - uvicorn.error - INFO - connection open
+2026-11-12 14:53:38,425 - freqtrade.rpc.api_server.ws.channel - INFO - Connected to channel - WebSocketChannel(cc793942, ('172.20.0.1', 45890))
+2026-11-12 14:53:44,443 - freqtrade.rpc.api_server.ws.channel - INFO - Disconnected from channel - WebSocketChannel(cc793942, ('172.20.0.1', 45890))
+2026-11-12 14:53:49,893 - uvicorn.error - INFO - 172.20.0.1:42984 - "WebSocket /api/v1/message/ws?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGl0eSI6eyJ1IjoiZ2M3In0sImV4cCI6MTc5NDQ5NjExNSwiaWF0IjoxNzk0NDk1MjE1LCJ0eXBlIjoiYWNjZXNzIn0.LqAQsze9vqybBzh8Mc-rFD9gBjwhFcy9h8upJ6aXn1Y" [accepted]
+2026-11-12 14:53:49,897 - uvicorn.error - INFO - connection open
+2026-11-12 14:53:49,900 - freqtrade.rpc.api_server.ws.channel - INFO - Connected to channel - WebSocketChannel(1ffb9d4f, ('172.20.0.1', 42984))
+2026-11-12 14:55:16,303 - freqtrade.rpc.api_server.ws.channel - INFO - Disconnected from channel - WebSocketChannel(1ffb9d4f, ('172.20.0.1', 42984))
+2026-11-12 14:55:17,484 - uvicorn.error - INFO - 172.20.0.1:45584 - "WebSocket /api/v1/message/ws?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGl0eSI6eyJ1IjoiZ2M3In0sImV4cCI6MTc5NDQ5NjExNSwiaWF0IjoxNzk0NDk1MjE1LCJ0eXBlIjoiYWNjZXNzIn0.LqAQsze9vqybBzh8Mc-rFD9gBjwhFcy9h8upJ6aXn1Y" [accepted]
+2026-11-12 14:55:17,487 - uvicorn.error - INFO - connection open
+2026-11-12 14:55:17,489 - freqtrade.rpc.api_server.ws.channel - INFO - Connected to channel - WebSocketChannel(d7f9d469, ('172.20.0.1', 45584))
+2026-11-12 14:55:35,390 - freqtrade.wallets - INFO - Wallets synced.
+2026-11-12 14:55:35,473 - freqtrade.freqtradebot - INFO - Long signal found: about create a new trade for APE/USD with stake_amount: 100 and price: 0.0919 ...
+2026-11-12 14:55:36,694 - freqtrade.freqtradebot - INFO - Order dry_run_buy_APE/USD_00f753a9-21f6-42fd-b8f1-392625f0307b was created for APE/USD and status is open.
+2026-11-12 14:55:36,721 - freqtrade.wallets - INFO - Wallets synced.
+2026-11-12 14:55:36,722 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'trade_id': 1, 'type': entry, 'buy_tag': '', 'enter_tag': '', 'exchange': 'Kraken', 'pair': 'APE/USD', 'leverage': 1.0, 'direction': 'Long', 'limit': 0.0919, 'order_rate': 0.0919, 'open_rate': 0.0919, 'order_type': 'limit', 'stake_amount': 100.0, 'stake_currency': 'USD', 'base_currency': 'APE', 'quote_currency': 'USD', 'fiat_currency': 'USD', 'amount': 1088.13928182, 'open_date': datetime.datetime(2026, 11, 12, 14, 55, 36, 695588, tzinfo=datetime.timezone.utc), 'current_rate': 0.0919, 'sub_trade': False}
+2026-11-12 14:55:36,737 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2026.10', state='RUNNING'
+2026-11-12 14:57:07,618 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=1, pair=APE/USD, amount=0, is_short=False, leverage=1, open_rate=0.0919, open_since=2026-11-12 14:55:36)
+2026-11-12 14:57:07,790 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2026.10', state='RUNNING'
+2026-11-12 14:57:08,701 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=1, pair=APE/USD, amount=0, is_short=False, leverage=1, open_rate=0.0919, open_since=2026-11-12 14:55:36)
+2026-11-12 14:57:23,080 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=1, pair=APE/USD, amount=0, is_short=False, leverage=1, open_rate=0.0919, open_since=2026-11-12 14:55:36)
+2026-11-12 14:57:38,046 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=1, pair=APE/USD, amount=0, is_short=False, leverage=1, open_rate=0.0919, open_since=2026-11-12 14:55:36)
+2026-11-12 14:57:53,082 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=1, pair=APE/USD, amount=0, is_short=False, leverage=1, open_rate=0.0919, open_since=2026-11-12 14:55:36)
+2026-11-12 14:58:07,793 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2026.10', state='RUNNING'
+2026-11-12 14:58:08,111 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=1, pair=APE/USD, amount=0, is_short=False, leverage=1, open_rate=0.0919, open_since=2026-11-12 14:55:36)
+2026-11-12 14:58:23,081 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=1, pair=APE/USD, amount=0, is_short=False, leverage=1, open_rate=0.0919, open_since=2026-11-12 14:55:36)
+2026-11-12 14:58:38,072 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=1, pair=APE/USD, amount=0, is_short=False, leverage=1, open_rate=0.0919, open_since=2026-11-12 14:55:36)
+2026-11-12 14:58:53,081 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=1, pair=APE/USD, amount=0, is_short=False, leverage=1, open_rate=0.0919, open_since=2026-11-12 14:55:36)
+2026-11-12 14:59:07,797 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2026.10', state='RUNNING'
+2026-11-12 14:59:08,077 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=1, pair=APE/USD, amount=0, is_short=False, leverage=1, open_rate=0.0919, open_since=2026-11-12 14:55:36)
+2026-11-12 14:59:23,063 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=1, pair=APE/USD, amount=0, is_short=False, leverage=1, open_rate=0.0919, open_since=2026-11-12 14:55:36)
+2026-11-12 14:59:38,062 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=1, pair=APE/USD, amount=0, is_short=False, leverage=1, open_rate=0.0919, open_since=2026-11-12 14:55:36)
+2026-11-12 14:59:53,111 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=1, pair=APE/USD, amount=0, is_short=False, leverage=1, open_rate=0.0919, open_since=2026-11-12 14:55:36)
+2026-11-12 15:00:39,142 - freqtrade.exchange.common - WARNING - _async_get_candle_history() returned exception: "Could not fetch historical candle (OHLCV) data for NPC/USD, 5m, spot due to ExchangeNotAvailable. Message: kraken GET https://api.kraken.com/0/public/OHLC?pair=NPCUSD&interval=5". Retrying still for 4 times.
+2026-11-12 15:00:39,219 - freqtrade.exchange.common - WARNING - _async_get_candle_history() returned exception: "Could not fetch historical candle (OHLCV) data for XTZ/USD, 5m, spot due to ExchangeNotAvailable. Message: kraken GET https://api.kraken.com/0/public/OHLC?pair=XTZUSD&interval=5". Retrying still for 4 times.
+2026-11-12 15:00:39,227 - freqtrade.exchange.common - WARNING - _async_get_candle_history() returned exception: "Could not fetch historical candle (OHLCV) data for DASH/USD, 5m, spot due to ExchangeNotAvailable. Message: kraken GET https://api.kraken.com/0/public/OHLC?pair=DASHUSD&interval=5". Retrying still for 4 times.
+2026-11-12 15:00:39,232 - freqtrade.exchange.common - WARNING - _async_get_candle_history() returned exception: "Could not fetch historical candle (OHLCV) data for BRL1/USD, 5m, spot due to ExchangeNotAvailable. Message: kraken GET https://api.kraken.com/0/public/OHLC?pair=BRL1USD&interval=5". Retrying still for 4 times.
+2026-11-12 15:00:44,797 - freqtrade.exchange.common - WARNING - _async_get_candle_history() returned exception: "Could not fetch historical candle (OHLCV) data for UNI/USD, 5m, spot due to RequestTimeout. Message: kraken GET https://api.kraken.com/0/public/OHLC?pair=UNIUSD&interval=5". Retrying still for 4 times.
+2026-11-12 15:00:47,438 - freqtrade.exchange.common - WARNING - _async_get_candle_history() returned exception: "Could not fetch historical candle (OHLCV) data for OP/USD, 5m, spot due to ExchangeNotAvailable. Message: kraken GET https://api.kraken.com/0/public/OHLC?pair=OPUSD&interval=5". Retrying still for 4 times.
+2026-11-12 15:00:47,444 - freqtrade.exchange.common - WARNING - _async_get_candle_history() returned exception: "Could not fetch historical candle (OHLCV) data for ARB/USD, 5m, spot due to ExchangeNotAvailable. Message: kraken GET https://api.kraken.com/0/public/OHLC?pair=ARBUSD&interval=5". Retrying still for 4 times.
+2026-11-12 15:00:47,448 - freqtrade.exchange.common - WARNING - _async_get_candle_history() returned exception: "Could not fetch historical candle (OHLCV) data for CVX/USD, 5m, spot due to ExchangeNotAvailable. Message: kraken GET https://api.kraken.com/0/public/OHLC?pair=CVXUSD&interval=5". Retrying still for 4 times.
+2026-11-12 15:00:47,450 - freqtrade.exchange.common - WARNING - _async_get_candle_history() returned exception: "Could not fetch historical candle (OHLCV) data for MEGA/USD, 5m, spot due to ExchangeNotAvailable. Message: kraken GET https://api.kraken.com/0/public/OHLC?pair=MEGAUSD&interval=5". Retrying still for 4 times.
+2026-11-12 15:00:47,454 - freqtrade.exchange.common - WARNING - _async_get_candle_history() returned exception: "Could not fetch historical candle (OHLCV) data for LIGHTER/USD, 5m, spot due to ExchangeNotAvailable. Message: kraken GET https://api.kraken.com/0/public/OHLC?pair=LIGHTERUSD&interval=5". Retrying still for 4 times.
+2026-11-12 15:00:47,457 - freqtrade.exchange.common - WARNING - _async_get_candle_history() returned exception: "Could not fetch historical candle (OHLCV) data for XAUT/USD, 5m, spot due to ExchangeNotAvailable. Message: kraken GET https://api.kraken.com/0/public/OHLC?pair=XAUTUSD&interval=5". Retrying still for 4 times.
+2026-11-12 15:00:47,460 - freqtrade.exchange.common - WARNING - _async_get_candle_history() returned exception: "Could not fetch historical candle (OHLCV) data for SUI/USD, 5m, spot due to ExchangeNotAvailable. Message: kraken GET https://api.kraken.com/0/public/OHLC?pair=SUIUSD&interval=5". Retrying still for 4 times.
+2026-11-12 15:00:55,824 - freqtrade.exchange.common - WARNING - _async_get_candle_history() returned exception: "Could not fetch historical candle (OHLCV) data for SEI/USD, 5m, spot due to ExchangeNotAvailable. Message: kraken GET https://api.kraken.com/0/public/OHLC?pair=SEIUSD&interval=5". Retrying still for 4 times.
+2026-11-12 15:00:55,827 - freqtrade.exchange.common - WARNING - _async_get_candle_history() returned exception: "Could not fetch historical candle (OHLCV) data for RUNE/USD, 5m, spot due to ExchangeNotAvailable. Message: kraken GET https://api.kraken.com/0/public/OHLC?pair=RUNEUSD&interval=5". Retrying still for 4 times.
+2026-11-12 15:00:55,831 - freqtrade.exchange.common - WARNING - _async_get_candle_history() returned exception: "Could not fetch historical candle (OHLCV) data for BONK/USD, 5m, spot due to ExchangeNotAvailable. Message: kraken GET https://api.kraken.com/0/public/OHLC?pair=BONKUSD&interval=5". Retrying still for 4 times.
+2026-11-12 15:00:55,834 - freqtrade.exchange.common - WARNING - _async_get_candle_history() returned exception: "Could not fetch historical candle (OHLCV) data for ICP/USD, 5m, spot due to ExchangeNotAvailable. Message: kraken GET https://api.kraken.com/0/public/OHLC?pair=ICPUSD&interval=5". Retrying still for 4 times.
+2026-11-12 15:00:55,838 - freqtrade.exchange.common - WARNING - _async_get_candle_history() returned exception: "Could not fetch historical candle (OHLCV) data for ETH/USD, 5m, spot due to ExchangeNotAvailable. Message: kraken GET https://api.kraken.com/0/public/OHLC?pair=XETHZUSD&interval=5". Retrying still for 4 times.
+2026-11-12 15:00:55,842 - freqtrade.exchange.common - WARNING - _async_get_candle_history() returned exception: "Could not fetch historical candle (OHLCV) data for CRV/USD, 5m, spot due to ExchangeNotAvailable. Message: kraken GET https://api.kraken.com/0/public/OHLC?pair=CRVUSD&interval=5". Retrying still for 4 times.
+2026-11-12 15:00:55,845 - freqtrade.exchange.common - WARNING - _async_get_candle_history() returned exception: "Could not fetch historical candle (OHLCV) data for W/USD, 5m, spot due to ExchangeNotAvailable. Message: kraken GET https://api.kraken.com/0/public/OHLC?pair=WUSD&interval=5". Retrying still for 4 times.
+2026-11-12 15:01:04,221 - freqtrade.exchange.common - WARNING - _async_get_candle_history() returned exception: "Could not fetch historical candle (OHLCV) data for INJ/USD, 5m, spot due to ExchangeNotAvailable. Message: kraken GET https://api.kraken.com/0/public/OHLC?pair=INJUSD&interval=5". Retrying still for 4 times.
+2026-11-12 15:01:04,225 - freqtrade.exchange.common - WARNING - _async_get_candle_history() returned exception: "Could not fetch historical candle (OHLCV) data for BNB/USD, 5m, spot due to ExchangeNotAvailable. Message: kraken GET https://api.kraken.com/0/public/OHLC?pair=BNBUSD&interval=5". Retrying still for 4 times.
+2026-11-12 15:01:04,229 - freqtrade.exchange.common - WARNING - _async_get_candle_history() returned exception: "Could not fetch historical candle (OHLCV) data for XRP/USD, 5m, spot due to ExchangeNotAvailable. Message: kraken GET https://api.kraken.com/0/public/OHLC?pair=XXRPZUSD&interval=5". Retrying still for 4 times.
+2026-11-12 15:01:04,233 - freqtrade.exchange.common - WARNING - _async_get_candle_history() returned exception: "Could not fetch historical candle (OHLCV) data for SYRUP/USD, 5m, spot due to ExchangeNotAvailable. Message: kraken GET https://api.kraken.com/0/public/OHLC?pair=SYRUPUSD&interval=5". Retrying still for 4 times.
+2026-11-12 15:01:04,237 - freqtrade.exchange.common - WARNING - _async_get_candle_history() returned exception: "Could not fetch historical candle (OHLCV) data for DOGE/USD, 5m, spot due to ExchangeNotAvailable. Message: kraken GET https://api.kraken.com/0/public/OHLC?pair=XDGUSD&interval=5". Retrying still for 4 times.
+2026-11-12 15:01:04,242 - freqtrade.exchange.common - WARNING - _async_get_candle_history() returned exception: "Could not fetch historical candle (OHLCV) data for SOL/USD, 5m, spot due to ExchangeNotAvailable. Message: kraken GET https://api.kraken.com/0/public/OHLC?pair=SOLUSD&interval=5". Retrying still for 4 times.
+2026-11-12 15:01:04,245 - freqtrade.exchange.common - WARNING - _async_get_candle_history() returned exception: "Could not fetch historical candle (OHLCV) data for JUP/USD, 5m, spot due to ExchangeNotAvailable. Message: kraken GET https://api.kraken.com/0/public/OHLC?pair=JUPUSD&interval=5". Retrying still for 4 times.
+2026-11-12 15:02:44,272 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=1, pair=APE/USD, amount=0, is_short=False, leverage=1, open_rate=0.0919, open_since=2026-11-12 14:55:36)
+2026-11-12 15:02:44,409 - freqtrade.freqtradebot - INFO - Fee for Trade Trade(id=1, pair=APE/USD, amount=0, is_short=False, leverage=1, open_rate=0.0919, open_since=2026-11-12 14:55:36) [buy]: 0.16 USD - rate: 0.0016
+2026-11-12 15:02:44,417 - freqtrade.persistence.trade_model - INFO - Updating trade (id=1) ...
+2026-11-12 15:02:44,420 - freqtrade.persistence.trade_model - INFO - LIMIT_BUY has been fulfilled for Trade(id=1, pair=APE/USD, amount=1088.13928182, is_short=False, leverage=1, open_rate=0.0919, open_since=2026-11-12 14:55:36).
+2026-11-12 15:02:44,486 - freqtrade.wallets - INFO - Wallets synced.
+2026-11-12 15:02:45,447 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'trade_id': 1, 'type': entry_fill, 'buy_tag': '', 'enter_tag': '', 'exchange': 'Kraken', 'pair': 'APE/USD', 'leverage': 1.0, 'direction': 'Long', 'limit': 0.0919, 'order_rate': 0.0919, 'open_rate': 0.0919, 'order_type': 'limit', 'stake_amount': 99.999999999258, 'stake_currency': 'USD', 'base_currency': 'APE', 'quote_currency': 'USD', 'fiat_currency': 'USD', 'amount': 1088.13928182, 'open_date': datetime.datetime(2026, 11, 12, 14, 55, 36, 695588, tzinfo=datetime.timezone.utc), 'current_rate': 0.0914, 'sub_trade': False}
+2026-11-12 15:02:46,719 - freqtrade.wallets - INFO - Wallets synced.
+2026-11-12 15:02:47,912 - freqtrade.freqtradebot - INFO - Long signal found: about create a new trade for BTC/USD with stake_amount: 100 and price: 71346.5 ...
+2026-11-12 15:02:49,067 - freqtrade.freqtradebot - INFO - Order dry_run_buy_BTC/USD_96eb63f2-30ec-42d7-95af-8c72ad52a52a was created for BTC/USD and status is closed.
+2026-11-12 15:02:49,138 - freqtrade.wallets - INFO - Wallets synced.
+2026-11-12 15:02:49,141 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'trade_id': 2, 'type': entry, 'buy_tag': '', 'enter_tag': '', 'exchange': 'Kraken', 'pair': 'BTC/USD', 'leverage': 1.0, 'direction': 'Long', 'limit': 71346.5, 'order_rate': 71346.5, 'open_rate': 71346.5, 'order_type': 'limit', 'stake_amount': 99.999967865, 'stake_currency': 'USD', 'base_currency': 'BTC', 'quote_currency': 'USD', 'fiat_currency': 'USD', 'amount': 0.00140161, 'open_date': datetime.datetime(2026, 11, 12, 15, 2, 49, 68720, tzinfo=datetime.timezone.utc), 'current_rate': 71346.5, 'sub_trade': False}
+2026-11-12 15:02:49,144 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=2, pair=BTC/USD, amount=0.00140161, is_short=False, leverage=1, open_rate=71346.5, open_since=2026-11-12 15:02:49)
+2026-11-12 15:02:49,164 - freqtrade.freqtradebot - INFO - Fee for Trade Trade(id=2, pair=BTC/USD, amount=0.00140161, is_short=False, leverage=1, open_rate=71346.5, open_since=2026-11-12 15:02:49) [buy]: 0.25999992 USD - rate: 0.0026
+2026-11-12 15:02:49,166 - freqtrade.persistence.trade_model - INFO - Updating trade (id=2) ...
+2026-11-12 15:02:49,169 - freqtrade.persistence.trade_model - INFO - LIMIT_BUY has been fulfilled for Trade(id=2, pair=BTC/USD, amount=0.00140161, is_short=False, leverage=1, open_rate=71346.5, open_since=2026-11-12 15:02:49).
+2026-11-12 15:02:49,207 - freqtrade.wallets - INFO - Wallets synced.
+2026-11-12 15:02:49,219 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'trade_id': 2, 'type': entry_fill, 'buy_tag': '', 'enter_tag': '', 'exchange': 'Kraken', 'pair': 'BTC/USD', 'leverage': 1.0, 'direction': 'Long', 'limit': 71346.5, 'order_rate': 71346.5, 'open_rate': 71346.5, 'order_type': 'limit', 'stake_amount': 99.999967865, 'stake_currency': 'USD', 'base_currency': 'BTC', 'quote_currency': 'USD', 'fiat_currency': 'USD', 'amount': 0.00140161, 'open_date': datetime.datetime(2026, 11, 12, 15, 2, 49, 68720, tzinfo=datetime.timezone.utc), 'current_rate': 71346.5, 'sub_trade': False}
+2026-11-12 15:02:49,551 - freqtrade.wallets - INFO - Wallets synced.
+2026-11-12 15:02:50,271 - freqtrade.freqtradebot - INFO - Long signal found: about create a new trade for POPCAT/USD with stake_amount: 100 and price: 0.0315 ...
+2026-11-12 15:02:51,459 - freqtrade.freqtradebot - INFO - Order dry_run_buy_POPCAT/USD_47394e2e-f4fd-4771-8071-0a9b0bd5e828 was created for POPCAT/USD and status is open.
+2026-11-12 15:02:51,509 - freqtrade.wallets - INFO - Wallets synced.
+2026-11-12 15:02:51,511 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'trade_id': 3, 'type': entry, 'buy_tag': '', 'enter_tag': '', 'exchange': 'Kraken', 'pair': 'POPCAT/USD', 'leverage': 1.0, 'direction': 'Long', 'limit': 0.0315, 'order_rate': 0.0315, 'open_rate': 0.0315, 'order_type': 'limit', 'stake_amount': 100.0, 'stake_currency': 'USD', 'base_currency': 'POPCAT', 'quote_currency': 'USD', 'fiat_currency': 'USD', 'amount': 3174.60317, 'open_date': datetime.datetime(2026, 11, 12, 15, 2, 51, 462866, tzinfo=datetime.timezone.utc), 'current_rate': 0.0315, 'sub_trade': False}
+2026-11-12 15:02:51,527 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2026.10', state='RUNNING'
+2026-11-12 15:02:52,666 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=3, pair=POPCAT/USD, amount=0, is_short=False, leverage=1, open_rate=0.0315, open_since=2026-11-12 15:02:51)
+2026-11-12 15:03:06,783 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=3, pair=POPCAT/USD, amount=0, is_short=False, leverage=1, open_rate=0.0315, open_since=2026-11-12 15:02:51)
+2026-11-12 15:03:21,861 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=3, pair=POPCAT/USD, amount=0, is_short=False, leverage=1, open_rate=0.0315, open_since=2026-11-12 15:02:51)
+2026-11-12 15:03:36,807 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=3, pair=POPCAT/USD, amount=0, is_short=False, leverage=1, open_rate=0.0315, open_since=2026-11-12 15:02:51)
+2026-11-12 15:03:51,532 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2026.10', state='RUNNING'
+2026-11-12 15:03:51,829 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=3, pair=POPCAT/USD, amount=0, is_short=False, leverage=1, open_rate=0.0315, open_since=2026-11-12 15:02:51)
+2026-11-12 15:04:06,805 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=3, pair=POPCAT/USD, amount=0, is_short=False, leverage=1, open_rate=0.0315, open_since=2026-11-12 15:02:51)
+2026-11-12 15:04:21,805 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=3, pair=POPCAT/USD, amount=0, is_short=False, leverage=1, open_rate=0.0315, open_since=2026-11-12 15:02:51)
+2026-11-12 15:04:36,804 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=3, pair=POPCAT/USD, amount=0, is_short=False, leverage=1, open_rate=0.0315, open_since=2026-11-12 15:02:51)
+2026-11-12 15:04:51,534 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2026.10', state='RUNNING'
+2026-11-12 15:04:51,823 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=3, pair=POPCAT/USD, amount=0, is_short=False, leverage=1, open_rate=0.0315, open_since=2026-11-12 15:02:51)
+2026-11-12 15:07:05,297 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=3, pair=POPCAT/USD, amount=0, is_short=False, leverage=1, open_rate=0.0315, open_since=2026-11-12 15:02:51)
+2026-11-12 15:07:09,024 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2026.10', state='RUNNING'
+2026-11-12 15:07:10,106 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=3, pair=POPCAT/USD, amount=0, is_short=False, leverage=1, open_rate=0.0315, open_since=2026-11-12 15:02:51)
+2026-11-12 15:07:24,302 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=3, pair=POPCAT/USD, amount=0, is_short=False, leverage=1, open_rate=0.0315, open_since=2026-11-12 15:02:51)
+2026-11-12 15:07:39,272 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=3, pair=POPCAT/USD, amount=0, is_short=False, leverage=1, open_rate=0.0315, open_since=2026-11-12 15:02:51)
+2026-11-12 15:07:54,324 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=3, pair=POPCAT/USD, amount=0, is_short=False, leverage=1, open_rate=0.0315, open_since=2026-11-12 15:02:51)
+2026-11-12 15:08:09,027 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2026.10', state='RUNNING'
+2026-11-12 15:08:09,333 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=3, pair=POPCAT/USD, amount=0, is_short=False, leverage=1, open_rate=0.0315, open_since=2026-11-12 15:02:51)
+2026-11-12 15:08:24,304 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=3, pair=POPCAT/USD, amount=0, is_short=False, leverage=1, open_rate=0.0315, open_since=2026-11-12 15:02:51)
+2026-11-12 15:08:39,306 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=3, pair=POPCAT/USD, amount=0, is_short=False, leverage=1, open_rate=0.0315, open_since=2026-11-12 15:02:51)
+2026-11-12 15:08:54,303 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=3, pair=POPCAT/USD, amount=0, is_short=False, leverage=1, open_rate=0.0315, open_since=2026-11-12 15:02:51)
+2026-11-12 15:09:09,030 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2026.10', state='RUNNING'
+2026-11-12 15:09:09,299 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=3, pair=POPCAT/USD, amount=0, is_short=False, leverage=1, open_rate=0.0315, open_since=2026-11-12 15:02:51)
+2026-11-12 15:09:24,307 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=3, pair=POPCAT/USD, amount=0, is_short=False, leverage=1, open_rate=0.0315, open_since=2026-11-12 15:02:51)
+2026-11-12 15:09:39,307 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=3, pair=POPCAT/USD, amount=0, is_short=False, leverage=1, open_rate=0.0315, open_since=2026-11-12 15:02:51)
+2026-11-12 15:09:54,302 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=3, pair=POPCAT/USD, amount=0, is_short=False, leverage=1, open_rate=0.0315, open_since=2026-11-12 15:02:51)
+2026-11-12 15:10:58,280 - freqtrade.commands.trade_commands - INFO - worker found ... calling exit
+2026-11-12 15:10:58,284 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': status, 'status': 'process died'}
+2026-11-12 15:10:58,286 - freqtrade.freqtradebot - INFO - Cleaning up modules ...
+2026-11-12 15:10:58,292 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': warning, 'status': "3 open trades active.\n\nHandle these trades manually on Kraken, or '/start' the bot again and use '/stopentry' to handle open trades gracefully. \nNote: Trades are simulated (dry run)."}
+2026-11-12 15:10:58,294 - freqtrade.rpc.rpc_manager - INFO - Cleaning up rpc modules ...
+2026-11-12 15:10:58,296 - freqtrade.rpc.rpc_manager - INFO - Cleaning up rpc.apiserver ...
+2026-11-12 15:10:58,299 - freqtrade.rpc.api_server.webserver - INFO - Stopping API Server
+2026-11-12 15:10:58,391 - uvicorn.error - INFO - Shutting down
+2026-11-12 15:10:58,409 - freqtrade.rpc.api_server.ws.channel - INFO - Disconnected from channel - WebSocketChannel(d7f9d469, ('172.20.0.1', 45584))
+2026-11-12 15:10:58,505 - uvicorn.error - INFO - Waiting for application shutdown.
+2026-11-12 15:10:58,512 - uvicorn.error - INFO - Application shutdown complete.
+2026-11-12 15:10:58,516 - uvicorn.error - INFO - Finished server process [1]
+2026-11-12 15:10:58,613 - freqtrade.exchange.common - WARNING - _async_get_candle_history() returned exception: "Could not fetch historical candle (OHLCV) data for DOGE/USD, 5m, spot due to ExchangeClosedByUser. Message: kraken instance was closed by the user". Retrying still for 4 times.
+2026-11-12 15:10:58,787 - freqtrade - INFO - SIGINT received, aborting ...
