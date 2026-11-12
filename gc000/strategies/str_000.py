@@ -457,6 +457,7 @@ class Str000(IStrategy):
 # → Custom dynamique
 # use_custom_stoploss = True
 
+
 def custom_stoploss(
     self,
     pair: str,
