@@ -1,0 +1,59 @@
+services:
+  # ------------------------------------------------------------------
+  # Instance 1 – port 8080, user_data (votre bot actuel)
+  # ------------------------------------------------------------------
+  freqtrade:
+    image: freqtradeorg/freqtrade:stable
+    # image: freqtradeorg/freqtrade:develop
+    # Use plotting image
+    # image: freqtradeorg/freqtrade:develop_plot
+    # # Enable GPU Image and GPU Resources (only relevant for freqAI)
+    # # Make sure to uncomment the whole deploy section
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [gpu]
+    # Build step - only needed when additional dependencies are needed
+    # build:
+    #   context: .
+    #   dockerfile: "./docker/Dockerfile.custom"
+    restart: unless-stopped
+    container_name: ftu000
+    volumes:
+      - "./u000:/freqtrade/user_data"
+    # Expose api on port 8080 (localhost only)
+    # Please read the https://www.freqtrade.io/en/stable/rest-api/ documentation
+    # for more information.
+    ports:
+      - "127.0.0.1:8080:8080"
+    # Default command used when running `docker compose up`
+    command: >
+      trade
+      --logfile /freqtrade/user_data/logs/freqtrade.log
+      --db-url sqlite:////freqtrade/user_data/tradesv3.sqlite
+      --config /freqtrade/user_data/config.json
+      --strategy Gc7Strategy001
+
+  # ------------------------------------------------------------------
+  # Instance 2 – port 8081, user_data2 (nouvelle instance)
+  # ------------------------------------------------------------------
+  freqtrade2:                           # nom du service (libre)
+    image: freqtradeorg/freqtrade:stable
+    restart: unless-stopped
+    container_name: ftu001         # nom unique pour le conteneur 2
+    volumes:
+      - "./u001:/freqtrade/user_data"   # volume différent
+    environment:
+      - FREQTRADE__API_SERVER__LISTEN_PORT=8080
+      - FREQTRADE__API_SERVER__LISTEN_IP_ADDRESS=0.0.0.0
+    ports:
+      - "127.0.0.1:8081:8080"          # port hôte 8081 → port conteneur 8080
+    command: >
+      trade
+      --logfile /freqtrade/user_data/logs/freqtrade.log
+      --db-url sqlite:////freqtrade/user_data/tradesv3.sqlite
+      --config /freqtrade/user_data/config.json
+      --strategy Str001
