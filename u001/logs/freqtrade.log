@@ -7797,3 +7797,20 @@ sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) disk I/O error
 2026-11-12 14:40:26,492 - freqtrade.rpc.api_server.ws.channel - INFO - Connected to channel - WebSocketChannel(393bf4a6, ('172.21.0.1', 35626))
 2026-11-12 14:40:33,332 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2026.10', state='RUNNING'
 2026-11-12 14:42:55,467 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2026.10', state='RUNNING'
+2026-11-12 14:44:07,469 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2026.10', state='RUNNING'
+2026-11-12 14:45:19,502 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2026.10', state='RUNNING'
+2026-11-12 14:45:48,478 - freqtrade.commands.trade_commands - INFO - worker found ... calling exit
+2026-11-12 14:45:48,480 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': status, 'status': 'process died'}
+2026-11-12 14:45:48,482 - freqtrade.freqtradebot - INFO - Cleaning up modules ...
+2026-11-12 14:45:48,487 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': warning, 'status': "20 open trades active.\n\nHandle these trades manually on Kraken, or '/start' the bot again and use '/stopentry' to handle open trades gracefully. \nNote: Trades are simulated (dry run)."}
+2026-11-12 14:45:48,489 - freqtrade.rpc.rpc_manager - INFO - Cleaning up rpc modules ...
+2026-11-12 14:45:48,491 - freqtrade.rpc.rpc_manager - INFO - Cleaning up rpc.apiserver ...
+2026-11-12 14:45:48,493 - freqtrade.rpc.api_server.webserver - INFO - Stopping API Server
+2026-11-12 14:45:48,502 - uvicorn.error - INFO - Shutting down
+2026-11-12 14:45:48,504 - freqtrade.rpc.api_server.ws.channel - INFO - Disconnected from channel - WebSocketChannel(393bf4a6, ('172.21.0.1', 35626))
+2026-11-12 14:45:48,604 - uvicorn.error - INFO - Waiting for application shutdown.
+2026-11-12 14:45:48,606 - uvicorn.error - INFO - Application shutdown complete.
+2026-11-12 14:45:48,608 - uvicorn.error - INFO - Finished server process [1]
+2026-11-12 14:45:48,862 - freqtrade - INFO - SIGINT received, aborting ...
+2026-11-12 14:45:49,214 - asyncio - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-538' coro=<Throttler.looper() done, defined at /home/ftuser/.local/lib/python3.14/site-packages/ccxt/async_support/base/throttler.py:76> wait_for=<Future pending cb=[Task.task_wakeup()]>>
