@@ -118,8 +118,8 @@ Kraken propose une API WebSocket (v2, recommandée) pour les flux en temps réel
 
 ### Auth
 
-* [ ] API privé
-* [ ] WebSocket
+- [ ] API privé
+- [ ] WebSocket
 
 #### 1. Authentification API privée (REST)
 
