@@ -1,0 +1,10 @@
+# Logs (fichiers et dossiers, à n'importe quelle profondeur)
+logs/
+*.log
+*.logs
+
+# Bases de données SQLite (Freqtrade)
+tradesv3.sqlite*
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal

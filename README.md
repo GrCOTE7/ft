@@ -1,6 +1,6 @@
 # FT
 
-## Cds
+## Commands
 
 ```pwsh
 ./go      # démarre gc000 (projet ft_main)
@@ -25,4 +25,20 @@ docker compose -p ft_main -f docker-compose.yml down
 docker compose -p ft_all  -f docker-compose_all_u.yml down
 ```
 
-* [ ] config schema dev
+## BackTesting
+
+Conseillé :
+
+- 10 ans de période (Différents cycles de marchés)
+
+  → 2018 à 2022 pour mise au point
+
+- Nombre de trades : 200
+  - Intraday (5m)
+  - Swing (1d)
+
+- En final, 5000+ trades pour bons calcul des Moyennes longues.
+
+---
+
+- [ ] Essayer config schema dev
