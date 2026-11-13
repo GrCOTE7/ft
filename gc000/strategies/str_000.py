@@ -68,15 +68,19 @@ class Str000(IStrategy):
     # Minimal ROI designed for the strategy.
     # This attribute will be overridden if the config file contains "minimal_roi".
     minimal_roi = {
-        # "120": 0.0,  # exit after 120 minutes at break even
-        "60": 0.01,
-        "30": 0.02,
-        "0": 0.04,
+        "144400": 0.2,  # exit after 120 minutes at break even
+        "1440": 0.1,
+        "60": 0.07,
+        "0": 0.3,
     }
+    # # "120": 0.0,  # exit after 120 minutes at break even
+    # "60": 0.01,
+    # "30": 0.02,
+    # "0": 0.04,
 
     # Optimal stoploss designed for the strategy.
     # This attribute will be overridden if the config file contains "stoploss".
-    stoploss = -0.10
+    stoploss = -0.2
 
     # Trailing stoploss
     trailing_stop = False

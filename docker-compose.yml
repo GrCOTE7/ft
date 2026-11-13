@@ -24,9 +24,15 @@ services:
     container_name: gc000
     volumes:
       - "./gc000:/freqtrade/user_data"
+      # - /etc/localtime:/etc/localtime:ro
+      # - /etc/timezone:/etc/timezone:ro
     # Expose api on port 8080 (localhost only)
     # Please read the https://www.freqtrade.io/en/stable/rest-api/ documentation
     # for more information.
+    environment:
+      - TZ=Europe/Paris
+      - FREQTRADE__API_SERVER__LISTEN_PORT=8000
+      - FREQTRADE__API_SERVER__LISTEN_IP_ADDRESS=0.0.0.0
     ports:
       - "127.0.0.1:8000:8000"
     # Default command used when running `docker compose up`

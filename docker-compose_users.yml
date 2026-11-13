@@ -27,8 +27,12 @@ services:
     # Expose api on port 8080 (localhost only)
     # Please read the https://www.freqtrade.io/en/stable/rest-api/ documentation
     # for more information.
+    environment:
+      - TZ=Europe/Paris
+      - FREQTRADE__API_SERVER__LISTEN_PORT=8080
+      - FREQTRADE__API_SERVER__LISTEN_IP_ADDRESS=0.0.0.0
     ports:
-      - "127.0.0.1:8080:8080"
+      - "127.0.0.1:7000:8080"
     # Default command used when running `docker compose up`
     command: >
       trade
@@ -40,17 +44,18 @@ services:
   # ------------------------------------------------------------------
   # Instance 2 – port 8081, user_data2 (nouvelle instance)
   # ------------------------------------------------------------------
-  freqtrade2:                           # nom du service (libre)
+  freqtrade1:                           # nom du service (libre)
     image: freqtradeorg/freqtrade:stable
     restart: unless-stopped
     container_name: ftu001         # nom unique pour le conteneur 2
     volumes:
       - "./u001:/freqtrade/user_data"   # volume différent
     environment:
+      - TZ=Europe/Paris
       - FREQTRADE__API_SERVER__LISTEN_PORT=8080
       - FREQTRADE__API_SERVER__LISTEN_IP_ADDRESS=0.0.0.0
     ports:
-      - "127.0.0.1:8081:8080"          # port hôte 8081 → port conteneur 8080
+      - "127.0.0.1:7001:8080"          # port hôte 7001 → port conteneur 8080
     command: >
       trade
       --logfile /freqtrade/user_data/logs/freqtrade.log
