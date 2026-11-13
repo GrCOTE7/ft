@@ -1,10 +1,28 @@
 # Kraken
 
+## Classification des actifs
+
+| Catégorie  | Nom complet              | Contenu                                  | Exemples                                              |
+| :--------- | :----------------------- | :--------------------------------------- | :---------------------------------------------------- |
+| **FX**     | Foreign Exchange (Forex) | Devises fiat uniquement                  | EUR/USD, GBP/USD, USD/JPY                             |
+| **RWA**    | Real-World Assets        | Actifs du monde réel, tokenisés on-chain | Immobilier, obligations, matières premières tokenisés |
+| **Crypto** | Cryptocurrency           | Majors + Altcoins + Stablecoins          | Voir détail ci-dessous                                |
+
+### Détail de la catégorie Crypto
+
+| Sous-catégorie         | Définition                                            | Exemples         |
+| :--------------------- | :---------------------------------------------------- | :--------------- |
+| **Majors**             | Grandes cryptos natives, les plus capitalisées        | BTC, ETH         |
+| **Altcoins**           | Cryptos alternatives (hors BTC/ETH, hors stablecoins) | SOL, LINK, RPL   |
+| **Stablecoins** (`SC`) | Tokens indexés sur une devise fiat                    | USDT, USDC, EURC |
+
 ## API
 
 ### URLs clés de l'API REST Kraken (Spot)
 
 Base de l'API : `https://api.kraken.com`
+
+Note: Kraken ne renvoie que 720 bougies max / appel API (Binance 1000)
 
 #### Informations système & référence (sans paramètre obligatoire)
 

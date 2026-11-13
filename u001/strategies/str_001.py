@@ -99,18 +99,23 @@ class Str001(IStrategy):
     buy_rsi = IntParameter(
         low=1, high=50, default=30, space="buy", optimize=True, load=True
     )
+    # Hyperoptable parameters - load charge valeur hyperopt
+    buy_rsi = IntParameter(
+        low=15, high=45, default=30, space="buy", optimize=True, load=False
+    )
     sell_rsi = IntParameter(
-        low=50, high=100, default=70, space="sell", optimize=True, load=True
+        low=55, high=85, default=70, space="sell", optimize=True, load=False
     )
     short_rsi = IntParameter(
-        low=51, high=100, default=70, space="sell", optimize=True, load=True
+        low=55, high=85, default=70, space="sell", optimize=True, load=False
     )
     exit_short_rsi = IntParameter(
-        low=1, high=50, default=30, space="exit", optimize=True, load=True
+        low=15, high=45, default=30, space="buy", optimize=True, load=False
     )
 
     # Number of candles the strategy requires before producing valid signals
-    startup_candle_count: int = 200
+    # FT recommande 5000 pour calcul des moyennes longues lors de backtesting - default 200
+    startup_candle_count: int = 500
 
     # Optional order type mapping.
     order_types = {

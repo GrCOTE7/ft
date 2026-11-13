@@ -114,7 +114,7 @@ class Str000(IStrategy):
     )
 
     # Number of candles the strategy requires before producing valid signals
-    startup_candle_count: int = 200
+    startup_candle_count: int = 500
 
     # Optional order type mapping.
     order_types = {

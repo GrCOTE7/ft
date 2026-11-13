@@ -6,6 +6,7 @@
 ./go      # démarre gc000 (projet ft_main)
 ./go u    # démarre ftd000 + ftd001 (projet ft_all)
 ./go a    # démarre les trois
+./go 0    # arrête tous les containers en route
 ```
 
 Utils
@@ -23,3 +24,5 @@ docker compose -p ft_all  -f docker-compose_all_u.yml logs -f
 docker compose -p ft_main -f docker-compose.yml down
 docker compose -p ft_all  -f docker-compose_all_u.yml down
 ```
+
+* [ ] config schema dev
